@@ -18,10 +18,14 @@
 <script>
 const button = document.getElementById("btn");
 
-button.addEventListener("click", function(saludo){
+function saludar(saludo){
 saludo.stopPropagation();
 alert("Hola!");
-});
+}
+
+button.addEventListener("click", saludar(saludo));
+
+
 </script>
 </body>
 </html>
