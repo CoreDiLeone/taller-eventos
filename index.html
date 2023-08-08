@@ -18,7 +18,8 @@
 <script>
 const button = document.getElementById("btn");
 
-button.addEventListener("click", function(){
+button.addEventListener("click", function(saludo){
+saludo.stopPropagation();
 alert("Hola!");
 });
 </script>
