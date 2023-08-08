@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="eventos.css">
+
     <title>Taller-eventos</title>
 </head>
 <body>
@@ -18,12 +19,12 @@
 <script>
 const boton = document.getElementById("btn");
 
-function saludar(saludo){
-saludo.stopPropagation();
+function saludar(event){
+event.stopPropagation();
 alert("Hola!");
 }
 
-boton.addEventListener("click", saludar(saludo));
+boton.addEventListener("click", saludar);
 
 
 </script>
